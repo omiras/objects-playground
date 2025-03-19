@@ -17,9 +17,9 @@ console.log(countPeopleFromCountry([
 ], "España")); // 2. Porque existen 2 personas en este array de objetos que son de España
 
 console.log(countPeopleFromCountry([
-    { nombre: "Santiago", pais: "Chile" },
+    { nombre: "Santiago", pais: "Perú" },
     { nombre: "Diego", pais: "Chile" },
     { nombre: "Valeria", pais: "México" }
-], "Chile")); // 2
+], "Chile")); // 1
 
 console.log(countPeopleFromCountry([{ nombre: "Laura", pais: "Brasil" }], "Perú")); // 0
