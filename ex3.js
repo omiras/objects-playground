@@ -3,8 +3,8 @@
  */
 
 let estudiante = {
-  nombre: "Alba",
-  conocimientos: ["Trello", "Adobe"],
+  nombre: "Alba", // string
+  conocimientos: ["Trello", "Adobe"], // array de strings
 };
 
 /**
@@ -20,5 +20,9 @@ let estudiante = {
  * Pistas:
  * 
  * 1. ¿De tipo de variable es 'conocimientos'?
- * 2. ¿Cuál es el método para añadir un nuevo elemento a un array?
+ * 2. ¿Cuál es el método para añadir un nuevo elemento a un array? push, shift
  */
+estudiante.conocimientos.push("CSS");
+console.log(estudiante);
+estudiante.conocimientos.push("JavaScript");
+console.log(estudiante);

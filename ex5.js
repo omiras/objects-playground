@@ -17,10 +17,15 @@ let pez3 = {
   color: "negro",
 };
 
+let pez4 = {
+  nombre: "Sirenita",
+  color: "rosa"
+}
+
 /**
  * Disponemos de un array de 3 objetos. Concretamente, son 3 peces.
 */ 
-let bancoPeces = [pez1, pez2, pez3];
+let bancoPeces = [pez1, pez2, pez3, pez4];
 
 /**
  * Crea un bucle para mostrar el nombre de cada pez seguido del color del pez siguiendo este formato:
@@ -29,3 +34,13 @@ let bancoPeces = [pez1, pez2, pez3];
  * "El pez Nemo es de color naranja"
  * "El pez Sipho es de color negro"
  */
+
+for (let i=0; i<bancoPeces.length; i++) {
+  console.log(`El pez ${bancoPeces[i].nombre} es de color ${bancoPeces[i].color}`);
+}
+
+console.log("-----------------------------------------------------")
+
+for (let i=0; i<bancoPeces.length; i++) {
+  console.log("El pez " +  bancoPeces[i].nombre +  " es de color " +  bancoPeces[i].color);
+}

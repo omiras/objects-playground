@@ -4,7 +4,10 @@ let estudiante = {
     mascota: {
         nombre: "Bigotes",
         tipo: "Gato",
-        color: "negro"
+        color: {
+          pelo: "negro",
+          ojos: "grises"
+        }
     }
   };
 
@@ -13,3 +16,9 @@ let estudiante = {
  * 
  * Escribe una sentencia JavaScript que permita mostrar el nombre de su mascota por console.log
  */
+
+console.log(estudiante.mascota.nombre);
+
+// Color del pelo de la mascota
+
+console.log(estudiante.mascota.color.pelo);

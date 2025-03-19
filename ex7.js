@@ -10,7 +10,16 @@
  */
 
 function getOldestAge(person1, person2) {
+    // Con tus palabras, que hay que hacer. Luego, escribir el JavaScript
+    // Tengo que mirar si la propiedad 'age' de person1 es mayor que la propiedad 'age' de person2. En tal caso, devolvere el valro de la propiedad 'age' de person1. En caso contrario, devuelvo el valor la propieda 'age' de person2
+    let agePerson1 = person1.age;
+    let agePerson2 = person2.age;
 
+    if (agePerson1>agePerson2) {
+        return agePerson1;
+    } else {
+        return agePerson2;
+    }
 }
 
 // Ejemplo de uso:

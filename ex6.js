@@ -6,7 +6,9 @@
  */
 
 function countHobbies(person) {
-
+    // Debemos consultar el tamaño de la propiedad hobbies y devolver dicho valor
+    let numHobbies = person.hobbies.length;
+    return numHobbies;
 }
 
 // Ejemplo de uso:
