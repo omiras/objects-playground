@@ -24,5 +24,4 @@ let estudiante = {
  */
 estudiante.conocimientos.push("CSS");
 console.log(estudiante);
-estudiante.conocimientos.push("JavaScript");
-console.log(estudiante);
+
