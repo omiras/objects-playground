@@ -25,3 +25,6 @@ let estudiante = {
  */
 
 // TU CÓDIGO A PARTIR DE AQUÍ
+
+// NO MODIFICAR A PARTIR DE AQUÍ
+console.log(estudiante);

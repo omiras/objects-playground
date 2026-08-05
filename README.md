@@ -18,5 +18,6 @@ En un terminal escribe `node ex1.js` y observa el resultado.
 
 [Clic para ver resultado esperado](https://oscarm.tinytake.com/msc/ODgxMTQ2MV8yMjI0MDgxMQ)
 
+### ex3.js
 
-
+<img src="https://oscarm.tinytake.com/media/18796e6?filename=1785956331990_TinyTake05-08-2026-06-58-49_639215459317705385.png&sub_type=thumbnail_preview&type=attachment&width=799&height=103" title="Powered by TinyTake Screen Capture"/><br>
