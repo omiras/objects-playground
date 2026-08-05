@@ -22,3 +22,8 @@ let estudiante = {
  * 1. ¿De tipo de variable es 'conocimientos'?
  * 2. ¿Cuál es el método para añadir un nuevo elemento a un array?
  */
+
+// Escribe una sentencia JavaScript a partir de aquí
+
+// No modificar a partir de aquí
+console.log(estudiante);
