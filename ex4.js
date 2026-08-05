@@ -18,7 +18,3 @@ let estudiante = {
  */
 
 console.log(estudiante.mascota.nombre);
-
-// Color del pelo de la mascota
-
-console.log(estudiante.mascota.color.pelo);
