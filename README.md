@@ -21,3 +21,7 @@ En un terminal escribe `node ex1.js` y observa el resultado.
 ### ex3.js
 
 <img src="https://oscarm.tinytake.com/media/18796e6?filename=1785956331990_TinyTake05-08-2026-06-58-49_639215459317705385.png&sub_type=thumbnail_preview&type=attachment&width=799&height=103" title="Powered by TinyTake Screen Capture"/><br>
+
+### ex4.js
+
+<img src="https://oscarm.tinytake.com/media/18796ea?filename=1785956532071_TinyTake05-08-2026-07-02-09_639215461317856422.png&sub_type=thumbnail_preview&type=attachment&width=796&height=112" title="Powered by TinyTake Screen Capture"/><br>
