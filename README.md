@@ -33,3 +33,7 @@ En un terminal escribe `node ex1.js` y observa el resultado.
 ### ex5b.js
 
 <img src="https://oscarm.tinytake.com/media/18796f4?filename=1785957480886_TinyTake05-08-2026-07-17-59_639215470808524313.png&sub_type=thumbnail_preview&type=attachment&width=799&height=100" title="Powered by TinyTake Screen Capture"/><br>
+
+### ex6.js
+
+<img src="https://oscarm.tinytake.com/media/1879ad2?filename=1786001791412_TinyTake06-08-2026-09-36-28_639215985907683099.png&sub_type=thumbnail_preview&type=attachment&width=556&height=132" title="Powered by TinyTake Screen Capture"/><br>

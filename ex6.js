@@ -7,6 +7,7 @@
 
 function countHobbies(person) {
 
+   // console.log("Pista: ", person.hobbies.length);
 }
 
 // Ejemplo de uso:

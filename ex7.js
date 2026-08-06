@@ -3,14 +3,18 @@
  * 
  * Recibe dos objetos con propiedades "name" y "age".
  * Devuelve la edad de la persona con mayor edad.
- * Si ambas tienen la misma edad, devuelve esa edad.
+ * Si ambas tienen la misma edad, devuelve cualquier edad.
  * 
  * IMPORTANTE: debes usar la palabra reservada "return" para devolver un número.
- * No es suficiente con usar console.log dentro de la función.
+ * No es suficiente con usar console.log dentro de la función. Puedes modificar el cuerpo de la función como desees, el código ya existente es una ayuda.
  */
 
 function getOldestAge(person1, person2) {
+    let edadMaxima = 0;
 
+    // Completar código
+
+    return edadMaxima;
 }
 
 // Ejemplo de uso:

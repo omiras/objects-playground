@@ -22,4 +22,5 @@ console.log(countPeopleFromCountry([
     { nombre: "Valeria", pais: "México" }
 ], "Chile")); // 1
 
-console.log(countPeopleFromCountry([{ nombre: "Laura", pais: "Brasil" }], "Perú")); // 0
+console.log(countPeopleFromCountry([{ nombre: "Laura", pais: "Brasil" }], "Perú")); // 0 
+
