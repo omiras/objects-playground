@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 3 · La palabra this</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejemplo 3 · La palabra this</h1>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Dentro de un método, this se refiere al objeto que lo invoca.</p>
+        <pre><code>const gato = { edad: 1, cumplir: function () { this.edad++; } };
+gato.cumplir();
+console.log(gato.edad); // 2</code></pre>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <p>Predice las edades antes de abrir la consola.</p>
+        <p>Observa el último <code>&lt;script&gt;</code> y compara el resultado.</p>
+      </section>
+      <details>
+        <summary>Resultado esperado</summary>
+        <pre>Esa es mi edad: 1
+Esta es mi nueva edad: 2</pre>
+      </details>
+    </main>
+    <script>
+      /**
+       * Más sobre métodos de objetos y la palabra reservada 'this'
+       * https://www.w3schools.com/js/js_this.asp
+       */
+      
+      /**
+       * Es bastante común que los métodos de un objeto, cambien alguno de los valores del mismo. Por ejemplo, veamos a continuación el método "cumplegato". Dicho método va a incrementar en uno la edad del felino cuando se invoque
+       */
+      
+       let otro_gato = {
+           nombre: "John",
+           edad: 1,
+           cumplegato: function() {
+               this.edad++
+           }
+       }
+      
+      console.log("Esa es mi edad: ", otro_gato.edad)
+      otro_gato.cumplegato() // Invocamos a la función cumplegato
+      console.log("Esta es mi nueva edad: ", otro_gato.edad)
+      
+      /**
+       * La palabra reservada 'this' es un elemento frecuente en diversos lenguajes de programación. Suele hacer referencia al contexto en el que se encuentra la ejecución del código. En nuestro caso, 'this' hace referencia al objeto 'otro_gato'. Entonces, this.edad hace referencia a la propiedad 'edad' del objeto.
+       */
+      
+       /**
+        * Para ver esto prueba lo siguiente:
+        * 
+        * 1. Pon un punto de parada en la línea 14
+        * 2. Ejecuta Run->Start Debuggung
+        * 3. Selecciona Node.js
+        * 4. Fíjate donde se para la ejecución del código. Inspecciona el valor de la variable 'this' en dicho contexto (si no ves nada a la izquierda, haz click en el icono del bicho con el símbolo de play)
+        */
+    </script>
+  </body>
+</html>

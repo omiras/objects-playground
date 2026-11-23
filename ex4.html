@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 · Objetos anidados</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 4 · Objetos anidados</h1>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Encadena propiedades para llegar a un objeto interior.</p>
+        <pre><code>const gato = { dueño: { nombre: "Ana" } };
+console.log(gato.dueño.nombre); // Ana</code></pre>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <p>Muestra solo el nombre de la mascota.</p>
+        <p>Edita el último <code>&lt;script&gt;</code>, guarda el archivo y recarga la página.</p>
+      </section>
+      <details>
+        <summary>Resultado esperado</summary>
+        <pre>Bigotes</pre>
+      </details>
+    </main>
+    <script>
+      let estudiante = {
+        nombre: "Alba",
+        conocimientos: ["Trello", "Adobe"],
+        mascota: {
+          nombre: "Bigotes",
+          tipo: "Gato",
+          color: "negro"
+        }
+      };
+      
+      /**
+       * Nuestra estudiante Alba ha adoptado una mascota.
+       * 
+       * Escribe una sentencia JavaScript que permita mostrar SOLAMENTE  el nombre de su mascota por console.log
+       */
+    </script>
+  </body>
+</html>

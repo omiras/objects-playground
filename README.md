@@ -1,39 +1,31 @@
-# Ejercicios sobre objetos 
+# Ejercicios de objetos en JavaScript
 
-## ¿Cómo hacerlo?
+Abre cada HTML en el navegador y consulta **F12 → Consola**. Lee «Antes de empezar» y «Tu turno», edita el último `<script>`, guarda y recarga. Consulta «Resultado esperado» después de intentarlo. No hay que instalar dependencias.
 
-En un terminal escribe `node ex1.js` y observa el resultado.
+## Ejemplos
 
-## Resultados esperados
+| Archivo | Tema |
+| --- | --- |
+| [Ejemplo 1](ejemplos/ejemplos-1.html) | Objetos y propiedades |
+| [Ejemplo 2](ejemplos/ejemplos-2.html) | Métodos y cambios |
+| [Ejemplo 3](ejemplos/ejemplos-3.html) | La palabra `this` |
+| [Ejemplo 4](ejemplos/ejemplos-4.html) | Objetos relacionados |
 
-### ex1.js
+## Ejercicios
 
-[Click para ver el resultado esperado](https://oscarm.tinytake.com/msc/ODgxMTQ2MF8yMjI0MDgxMA)
+| Archivo | Tema |
+| --- | --- |
+| [Ejercicio 1](ex1.html) | Leer una propiedad |
+| [Ejercicio 1a](ex1a.html) | Crear un objeto |
+| [Ejercicio 2](ex2.html) | Modificar una propiedad |
+| [Ejercicio 3](ex3.html) | Añadir a un array del objeto |
+| [Ejercicio 4](ex4.html) | Objetos anidados |
+| [Ejercicio 5](ex5.html) | Array de objetos |
+| [Ejercicio 5b](ex5b.html) | Total de la compra |
+| [Ejercicio 6](ex6.html) | Contar hobbies |
+| [Ejercicio 7](ex7.html) | Edad mayor |
+| [Ejercicio 8](ex8.html) | Color puro |
+| [Ejercicio 8b (difícil)](ex8b-dificil.html) | Contar personas por país |
+| [Ejercicio 9](ex9.html) | Método aprender |
+| [Ejercicio 9b](ex9b.html) | El robot |
 
-### ex1a.js
-
-<img src="https://oscarm.tinytake.com/media/18796d3?filename=1785955982121_TinyTake05-08-2026-06-52-58_639215455819229004.png&sub_type=thumbnail_preview&type=attachment&width=798&height=332" title="Powered by TinyTake Screen Capture"/><br>
-
-### ex2.js
-
-[Clic para ver resultado esperado](https://oscarm.tinytake.com/msc/ODgxMTQ2MV8yMjI0MDgxMQ)
-
-### ex3.js
-
-<img src="https://oscarm.tinytake.com/media/18796e6?filename=1785956331990_TinyTake05-08-2026-06-58-49_639215459317705385.png&sub_type=thumbnail_preview&type=attachment&width=799&height=103" title="Powered by TinyTake Screen Capture"/><br>
-
-### ex4.js
-
-<img src="https://oscarm.tinytake.com/media/18796ea?filename=1785956532071_TinyTake05-08-2026-07-02-09_639215461317856422.png&sub_type=thumbnail_preview&type=attachment&width=796&height=112" title="Powered by TinyTake Screen Capture"/><br>
-
-### ex5.js
-
-<img src="https://oscarm.tinytake.com/media/18796f3?filename=1785957284454_TinyTake05-08-2026-07-14-38_639215468843093805.png&sub_type=thumbnail_preview&type=attachment&width=798&height=189" title="Powered by TinyTake Screen Capture"/>
-
-### ex5b.js
-
-<img src="https://oscarm.tinytake.com/media/18796f4?filename=1785957480886_TinyTake05-08-2026-07-17-59_639215470808524313.png&sub_type=thumbnail_preview&type=attachment&width=799&height=100" title="Powered by TinyTake Screen Capture"/><br>
-
-### ex6.js
-
-<img src="https://oscarm.tinytake.com/media/1879ad2?filename=1786001791412_TinyTake06-08-2026-09-36-28_639215985907683099.png&sub_type=thumbnail_preview&type=attachment&width=556&height=132" title="Powered by TinyTake Screen Capture"/><br>

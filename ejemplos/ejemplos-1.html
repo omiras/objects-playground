@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 1 · Objetos y propiedades</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejemplo 1 · Objetos y propiedades</h1>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Un objeto agrupa datos mediante propiedades. Puede contener arrays y otros objetos.</p>
+        <pre><code>const gato = { nombre: "Miso", edad: 2 };
+console.log(gato.nombre); // Miso</code></pre>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <p>Observa los dos gatos en la consola y expande sus propiedades.</p>
+        <p>Observa el último <code>&lt;script&gt;</code> y compara el resultado.</p>
+      </section>
+      <details>
+        <summary>Resultado esperado</summary>
+        <pre>Gato #1 { edad: 2, raza: "Persa", vacunado: true }
+Otro gato: { edad: 5, raza: "Vulgaris", vacunado: false, latas_favoritas: ["Purina", "Wild Cat"], hermanos: {…} }</pre>
+      </details>
+    </main>
+    <script>
+      /**
+       * Los objetos en JavaScript nos permiten almacenar información de forma estrcturada https://www.w3schools.com/js/js_objects.asp
+       * 
+       */
+      
+      let gatito = {
+          edad: 2,
+          raza: "Persa",
+          vacunado: true
+      }
+      
+      console.log("Gato #1", gatito)
+      
+      /**
+       * Los objetos pueden incluso contener datos estructurados como arrays, u otros objetos!
+       */
+      
+       let gatito_dos = {
+           edad: 5,
+           raza: "Vulgaris",
+           vacunado: false,
+           latas_favoritas : ["Purina", "Wild Cat"],
+           hermanos : gatito
+       }
+      
+       console.log("Otro gato:", gatito_dos)
+    </script>
+  </body>
+</html>

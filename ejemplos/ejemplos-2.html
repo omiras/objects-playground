@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 2 · Métodos y cambios</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejemplo 2 · Métodos y cambios</h1>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Un método es una función guardada en un objeto. Sus propiedades se pueden leer y actualizar.</p>
+        <pre><code>const gato = { nombre: "Miso", saludar: function () { console.log("Miau"); } };
+gato.saludar(); // Miau</code></pre>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <p>Observa cómo se invoca maullar y cómo cambia edad.</p>
+        <p>Observa el último <code>&lt;script&gt;</code> y compara el resultado.</p>
+      </section>
+      <details>
+        <summary>Resultado esperado</summary>
+        <pre>Nombre Bigotes
+Edad 10
+Miau!
+Feliz cumpleaños, gato! Tu edad es ahora: 11</pre>
+      </details>
+    </main>
+    <script>
+      /**
+       * Los objetos pueden tener funciones.
+       * A las funciones de los objetos se les suele llamar "métodos" (methods, en inglés)
+       */
+      
+      let gato = {
+          nombre: 'Bigotes',
+          edad: 10,
+          maullar: function () {
+              console.log("Miau!")
+          }
+      }
+      
+      console.log("Nombre", gato.nombre)
+      console.log("Edad", gato.edad)
+      
+      gato.maullar()
+      
+      
+      /**
+       * Actualizar un objeto
+       */
+      /**
+       * Las popiedades de los objetos se pueden actualizar.
+       * Lo hacemos de manera muy similar a como actualizamos variables (de hecho, al fin y al cabo, un objeto se compone de un conjunto de variales)
+       */
+      
+      gato.edad++
+      console.log("Feliz cumpleaños, gato! Tu edad es ahora: " + gato.edad)
+    </script>
+  </body>
+</html>

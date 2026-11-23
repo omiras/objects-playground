@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9 · Método aprender</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 9 · Método aprender</h1>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Dentro de un método, this señala al objeto que lo invoca.</p>
+        <pre><code>const gato = { juguetes: [], aprender: function (juguete) { this.juguetes.push(juguete); } };
+gato.aprender("pelota");
+console.log(gato.juguetes); // ["pelota"]</code></pre>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <p>Completa el método <code>aprender</code>. Debe recibir un nuevo conocimiento y añadirlo al array <code>conocimientos</code> del propio estudiante. Después de llamarlo con <code>"HTML"</code>, el array debe contener ese texto.</p>
+        <p>Edita el último <code>&lt;script&gt;</code>, guarda el archivo y recarga la página.</p>
+      </section>
+      <details>
+        <summary>Resultado esperado</summary>
+        <pre>Debería aparecer aquí que el estudiante ha aprendido HTML: ["HTML"]</pre>
+      </details>
+    </main>
+    <script>
+      /**
+       * Métodos de objetos
+       */
+      
+      /**
+       * Implementa el método "aprender"; que está parcialmente implementado. LA función recibe por parámetro un string, con el nuevo conocimiento aprendido. Debe actualizar la propiedad 'conocimientos' con dicho nuevo string.
+       *
+       */
+      let estudiante = {
+        nombre: "Edu",
+        conocimientos: [],
+        aprender: function (nuevoConocimiento) {
+          // una línia de código
+        },
+      };
+      
+      estudiante.aprender("HTML");
+      console.log(
+        "Debería aparecer aquí que el estudiante ha aprendido HTML:",
+        estudiante.conocimientos
+      );
+    </script>
+  </body>
+</html>

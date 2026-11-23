@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6 · Contar hobbies</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 6 · Contar hobbies</h1>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>La propiedad length indica cuántos elementos contiene un array.</p>
+        <pre><code>const persona = { hobbies: ["leer", "nadar"] };
+console.log(persona.hobbies.length); // 2</code></pre>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <p>Completa <code>countHobbies</code> para que devuelva el número de hobbies que tiene la persona recibida.</p>
+        <p>Edita el último <code>&lt;script&gt;</code>, guarda el archivo y recarga la página.</p>
+      </section>
+      <details>
+        <summary>Resultado esperado</summary>
+        <pre>3
+1
+0</pre>
+      </details>
+    </main>
+    <script>
+      /**
+       * Contar cuántos hobbies tiene una persona
+       * 
+       * Dado un objeto que representa a una persona con una propiedad "hobbies" (un array), 
+       * la función debe devolver un number indicando cuántos hobbies tiene.
+       */
+      
+      function countHobbies(person) {
+      
+         // console.log("Pista: ", person.hobbies.length);
+      }
+      
+      // Ejemplo de uso:
+      console.log(countHobbies({ nombre: "Carlos", hobbies: ["leer", "correr", "ajedrez"] })); // 3 . Porque la propiedad hobbies tiene 3 elementos
+      console.log(countHobbies({ nombre: "Ana", hobbies: ["bailar"] })); // 1
+      console.log(countHobbies({ nombre: "Luis", hobbies: [] })); // 0. Porque la propiedad hobbies no tiene elementos (es un array vacío)
+    </script>
+  </body>
+</html>

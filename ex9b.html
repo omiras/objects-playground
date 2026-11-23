@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9b · El robot</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 9b · El robot</h1>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Combina propiedades simples, objetos anidados, arrays y métodos.</p>
+        <pre><code>const robot = { batería: { nivel: 50 }, movimientos: ["caminar"] };
+console.log(robot.batería.nivel); // 50
+console.log(robot.movimientos.includes("volar")); // false</code></pre>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <p>Sustituye cada <code>undefined</code> por una expresión que lea o calcule el dato solicitado: modelo, color, peso en la Luna, batería, número de herramientas y posibilidad de volar. Después llama a los métodos del robot para encenderlo, cargar 500 unidades de batería y pedirle que camine.</p>
+        <p>Edita el último <code>&lt;script&gt;</code>, guarda el archivo y recarga la página.</p>
+      </section>
+      <details>
+        <summary>Resultado esperado</summary>
+        <pre>Muestra el nombre del robot:  Front Ender Maximus
+Muestra el modelo del robot:  XR-500
+Muestra el color del robot:  Plateado
+Calcula el peso del robot en la luna, sabiendo que el peso del robot en la luna es el 16,5% del peso del robot en la tierra:  24.75
+Indica el nivel actual de carga de batería del robot:  3500
+Indica el número de herramientas de las que dispone el robot 3
+Devuelve un true o un false indicando si, entre los movimientos del robot, existe la capacidad de 'volar'  false
+Front Ender Maximus está encendido.
+Front Ender Maximus ha sido cargado. Nivel de batería actual: 4000
+Front Ender Maximus está realizando la tarea: caminar</pre>
+      </details>
+    </main>
+    <script>
+      /**
+       * Completa cada pregunta . Cada una de ellas requiere de una única línea de código. Cambia cada undefined por la sentencia JavaScript adecuada
+       *
+       */
+      
+      const robot = {
+        nombre: "Front Ender Maximus",
+        modelo: "XR-500",
+        color: "Plateado",
+        altura: 120,
+        peso: 150, // kg
+        batería: {
+          capacidad: 5000,
+          nivelActual: 3500,
+        },
+        capacidadCarga: 100,
+        herramientas: ["Brazo mecánico", "Láser de corte", "Destornillador"],
+        movimientos: ["Caminar", "Girar", "Saltar"],
+        encendido: false,
+        activar: function () {
+          this.encendido = true;
+          console.log(`${this.nombre} está encendido.`);
+        },
+        apagar: function () {
+          this.encendido = false;
+          console.log(`${this.nombre} está apagado.`);
+        },
+        cargarBateria: function (cantidad) {
+          if (this.batería.nivelActual + cantidad <= this.batería.capacidad) {
+            this.batería.nivelActual += cantidad;
+            console.log(
+              `${this.nombre} ha sido cargado. Nivel de batería actual: ${this.batería.nivelActual}`
+            );
+          } else {
+            console.log(
+              `${this.nombre} no puede cargar más batería, está al máximo.`
+            );
+          }
+        },
+        realizarTarea: function (tarea) {
+          if (this.encendido) {
+            console.log(`${this.nombre} está realizando la tarea: ${tarea}`);
+          } else {
+            console.log(
+              `${this.nombre} no puede realizar tareas porque está apagado.`
+            );
+          }
+        },
+      };
+      
+      // Ejemplo ya solucionado
+      console.log("Muestra el nombre del robot: ", robot.nombre);
+      
+      console.log("Muestra el modelo del robot: ", undefined);
+      
+      console.log("Muestra el color del robot: ", undefined);
+      
+      console.log(
+        "Calcula el peso del robot en la luna, sabiendo que el peso del robot en la luna es el 16,5% del peso del robot en la tierra: ",
+        undefined
+      );
+      
+      console.log(
+        "Indica el nivel actual de carga de batería del robot: ",
+        undefined
+      );
+      
+      console.log(
+        "Indica el número de herramientas de las que dispone el robot",
+        undefined
+      );
+      
+      console.log(
+        "Devuelve un true o un false indicando si, entre los movimientos del robot, existe la capacidad de 'volar' ",
+        undefined
+      );
+      
+      /**
+       * Escribe 3 líneas JavaScript para ejecutar las siguientes acciones del robot. Debe ejecutar 3 métodos:
+       *
+       * 1. Activar el robot
+       * 2. Carga la batería del robot 500 unidades
+       * 3. Indica al robot que relice la tarea de "caminar"
+       *  */
+    </script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5 · Array de objetos</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 5 · Array de objetos</h1>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Selecciona primero el elemento por índice y después su propiedad.</p>
+        <pre><code>const libros = [{ titulo: "Duna", precio: 12 }];
+console.log(libros[0].precio); // 12</code></pre>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <p>Cambia solo las tres líneas señaladas.</p>
+        <p>Edita el último <code>&lt;script&gt;</code>, guarda el archivo y recarga la página.</p>
+      </section>
+      <details>
+        <summary>Resultado esperado</summary>
+        <pre>Precio Manzanas: 1.2
+Precio Leche: 1.5
+Nombre del cuarto producto en mayúsculas: HUEVOS
+Suma del precio de Pan + Manzanas: 2.05</pre>
+      </details>
+    </main>
+    <script>
+      /**
+       * Fíjate en el siguiente array. Es un array de objetos. Concretamente, de productos de supermercado. Cada producte se compone de un nombre y un precio.
+       */
+      
+      const productos = [
+        { nombre: 'Manzanas', precio: 1.2 },
+        { nombre: 'Pan', precio: 0.85 },
+        { nombre: 'Leche', precio: 1.5 },
+        { nombre: 'Huevos', precio: 2.3 },
+        { nombre: 'Queso', precio: 3.4 }
+      ];
+      
+      // Cambia únicamente la línea indicada para obtener el resultado esperado. El primero ya está solucionado.
+      
+      const precioManzanas = productos[0].precio;
+      console.log("Precio Manzanas: ", precioManzanas);
+      
+      const precioLeche = 0; //<-- CAMBIAR
+      console.log("Precio Leche: ", precioLeche);
+      
+      const nombreHuevosMayusculas = ""; //<-- CAMBIAR
+      console.log("Nombre del cuarto producto en mayúsculas: ", nombreHuevosMayusculas);
+      
+      const precioPanMasManzanas = 0; //<---CAMBIAR
+      console.log("Suma del precio de Pan + Manzanas: ", precioPanMasManzanas);
+    </script>
+  </body>
+</html>

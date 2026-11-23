@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7 · Edad mayor</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 7 · Edad mayor</h1>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Compara age y devuelve el valor mayor con return.</p>
+        <pre><code>const uno = { age: 20 };
+const dos = { age: 25 };
+console.log(uno.age &gt; dos.age ? uno.age : dos.age); // 25</code></pre>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <p>Completa <code>getOldestAge</code> para comparar las edades de las dos personas y devolver la edad mayor. Si tienen la misma edad, devuelve esa edad. La función debe usar <code>return</code>.</p>
+        <p>Edita el último <code>&lt;script&gt;</code>, guarda el archivo y recarga la página.</p>
+      </section>
+      <details>
+        <summary>Resultado esperado</summary>
+        <pre>30
+50
+20</pre>
+      </details>
+    </main>
+    <script>
+      /**
+       * Obtener la edad de la persona mayor
+       * 
+       * Recibe dos objetos con propiedades "name" y "age".
+       * Devuelve la edad de la persona con mayor edad.
+       * Si ambas tienen la misma edad, devuelve cualquier edad.
+       * 
+       * IMPORTANTE: debes usar la palabra reservada "return" para devolver un número.
+       * No es suficiente con usar console.log dentro de la función. Puedes modificar el cuerpo de la función como desees, el código ya existente es una ayuda.
+       */
+      
+      function getOldestAge(person1, person2) {
+          let edadMaxima = 0;
+      
+          // Completar código
+      
+          return edadMaxima;
+      }
+      
+      // Ejemplo de uso:
+      console.log(getOldestAge({ name: "Pedro", age: 30 }, { name: "María", age: 25 })); 
+      // 30. Porque Pedro es mayor que María
+      
+      console.log(getOldestAge({ name: "Ana", age: 40 }, { name: "Luis", age: 50 })); 
+      // 50
+      
+      console.log(getOldestAge({ name: "Elena", age: 20 }, { name: "Carlos", age: 20 })); 
+      // 20
+    </script>
+  </body>
+</html>

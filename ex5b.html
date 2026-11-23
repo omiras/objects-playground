@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5b · Total de la compra</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 5b · Total de la compra</h1>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Un acumulador suma un precio en cada vuelta del bucle.</p>
+        <pre><code>const artículos = [{ precio: 2 }, { precio: 3 }];
+let suma = 0;
+for (let i = 0; i &lt; artículos.length; i++) suma += artículos[i].precio;
+console.log(suma); // 5</code></pre>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <p>Completa el interior del for.</p>
+        <p>Edita el último <code>&lt;script&gt;</code>, guarda el archivo y recarga la página.</p>
+      </section>
+      <details>
+        <summary>Resultado esperado</summary>
+        <pre>Total: 9.25</pre>
+      </details>
+    </main>
+    <script>
+      /*
+      Enunciado - Mercado del Barrio:
+      
+      Eres el contador del mercado del barrio y esta tarde debes cerrar la caja.
+      Tienes un listado de productos en el carrito de la compra, cada uno con su
+      nombre y su precio. Recorre el array `productos` usando un bucle (sin crear
+      una función) y suma la propiedad `precio` de cada objeto para obtener el
+      total de la compra. Guarda el resultado final en la variable `total` y
+      muéstralo por consola.
+      
+      Pista: usa un bucle `for` y accede a `productos[i].precio` en cada iteración.
+      */
+      // Array de productos: cada producto tiene nombre y precio
+      const productos = [
+        { nombre: 'Manzanas', precio: 1.2 },
+        { nombre: 'Pan', precio: 0.85 },
+        { nombre: 'Leche', precio: 1.5 },
+        { nombre: 'Huevos', precio: 2.3 },
+        { nombre: 'Queso', precio: 3.4 }
+      ];
+      
+      let total = 0;
+      
+      for (let i = 0; i < productos.length; i++) {
+          // ¿Que hay que hacer dentro del bucle?
+      }
+      
+      console.log('Total:', total); // Debería mostrar el total de los precios de todos los productos
+    </script>
+  </body>
+</html>

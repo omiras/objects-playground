@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 4 · Objetos relacionados</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejemplo 4 · Objetos relacionados</h1>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Los objetos pueden contener referencias a otros objetos.</p>
+        <pre><code>const caja = { contenido: [] };
+const texto = { parent: caja };
+console.log(texto.parent === caja); // true</code></pre>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <p>Inspecciona div, span e img. Explica parent y children.</p>
+        <p>Observa el último <code>&lt;script&gt;</code> y compara el resultado.</p>
+      </section>
+      <details>
+        <summary>Resultado esperado</summary>
+        <pre>div: { width: "100%", height: "auto", class: ["container", "text-align"], … }
+span: { width: "100%", textContent: "Hola! Estamos a punto de adentrarnos en la manipulación del DOM con JavaScript!", parent: {…} }
+img: { width: "auto", src: "img/jsIsCool.png", parent: {…} }</pre>
+      </details>
+    </main>
+    <script>
+      /**
+       * Imagina el árbol DOM como un montón de objetos JavaScript
+       */
+      
+       /**
+        * Imagina que existe el siguiente objeto
+        */
+      
+      let div,span,img
+      
+       div = {
+          width: '100%',
+          height: 'auto',
+          class: ['container', 'text-align'],
+          margin: {
+              top: '1rem',
+              bottom: '1rem'
+          },
+      
+          backgroundImage: 'images/patronFondo.jpeg',
+          children: [span, img]
+      }
+      
+      /**
+       * <div>
+       *    <span></span>
+       *    <img>
+       * </div>
+       */
+      
+      span = {
+          width: '100%',
+          textContent: 'Hola! Estamos a punto de adentrarnos en la manipulación del DOM con JavaScript!',
+          
+          parent: div
+      }
+      
+      img = {
+          width: 'auto',
+          src: 'img/jsIsCool.png',
+      
+          parent: div
+      }
+      
+      /**
+       * ¿De que manera estan relacionados estos dos objetos?
+       * ¿Verdad que las propiedades que tienen te resultan familiares? 
+       */
+      console.log("div:", div); console.log("span:", span); console.log("img:", img);
+    </script>
+  </body>
+</html>
