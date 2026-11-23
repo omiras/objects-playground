@@ -18,8 +18,9 @@ const ejercicios = {
   ],
   ex5b: [{ caso: "total del carrito", esperado: 9.25, ejecutar: () => total }],
   ex6: [
-    { caso: 'countHobbies({ hobbies: ["leer", "correr", "ajedrez"] })', esperado: 3, ejecutar: () => countHobbies({ hobbies: ["leer", "correr", "ajedrez"] }) },
-    { caso: "countHobbies({ hobbies: [] })", esperado: 0, ejecutar: () => countHobbies({ hobbies: [] }) }
+    { caso: 'countHobbies({ nombre: "Carlos", hobbies: ["leer", "correr", "ajedrez"] })', esperado: 3, ejecutar: () => countHobbies({ nombre: "Carlos", hobbies: ["leer", "correr", "ajedrez"] }) },
+    { caso: 'countHobbies({ nombre: "Ana", hobbies: ["bailar"] })', esperado: 1, ejecutar: () => countHobbies({ nombre: "Ana", hobbies: ["bailar"] }) },
+    { caso: 'countHobbies({ nombre: "Luis", hobbies: [] })', esperado: 0, ejecutar: () => countHobbies({ nombre: "Luis", hobbies: [] }) }
   ],
   ex7: [
     { caso: "getOldestAge({ age: 40 }, { age: 20 })", esperado: 40, ejecutar: () => getOldestAge({ age: 40 }, { age: 20 }) },
