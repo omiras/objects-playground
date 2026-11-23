@@ -6,7 +6,7 @@
     <title>Ejercicio 5b · Total de la compra</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body data-ejercicio="ex5b">
     <main class="lesson">
       <header>
         <h1>Ejercicio 5b · Total de la compra</h1>
@@ -29,8 +29,12 @@ console.log(suma); // 5</code></pre>
         <summary>Resultado esperado</summary>
         <pre>Total: 9.25</pre>
       </details>
+      <section aria-labelledby="pruebas"><h2 id="pruebas">Comprueba tu solución</h2><p id="resumen"></p><ul id="resultados"></ul></section>
     </main>
     <script>
+      window.__exerciseLogs = [];
+      const originalLog = console.log;
+      console.log = function (...valores) { window.__exerciseLogs.push(valores); originalLog.apply(console, valores); };
       /*
       Enunciado - Mercado del Barrio:
       
@@ -60,5 +64,6 @@ console.log(suma); // 5</code></pre>
       
       console.log('Total:', total); // Debería mostrar el total de los precios de todos los productos
     </script>
+    <script src="pruebas.js"></script>
   </body>
 </html>

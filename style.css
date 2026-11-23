@@ -113,3 +113,8 @@ body {
   font-family: Georgia, serif;
   font-style: italic;
 }
+
+#resultados { padding-left: 24px; }
+#resultados li { margin: 6px 0; }
+#resultados .bien { color: #167044; }
+#resultados .mal { color: #a52a2a; }

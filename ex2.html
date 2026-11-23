@@ -6,7 +6,7 @@
     <title>Ejercicio 2 · Modificar una propiedad</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body data-ejercicio="ex2">
     <main class="lesson">
       <header>
         <h1>Ejercicio 2 · Modificar una propiedad</h1>
@@ -28,8 +28,12 @@ console.log(gato.edad); // 3</code></pre>
         <summary>Resultado esperado</summary>
         <pre>Rudolph</pre>
       </details>
+      <section aria-labelledby="pruebas"><h2 id="pruebas">Comprueba tu solución</h2><p id="resumen"></p><ul id="resultados"></ul></section>
     </main>
     <script>
+      window.__exerciseLogs = [];
+      const originalLog = console.log;
+      console.log = function (...valores) { window.__exerciseLogs.push(valores); originalLog.apply(console, valores); };
       /**
        * Modificar la propiedad de un objeto
        */
@@ -49,5 +53,6 @@ console.log(gato.edad); // 3</code></pre>
       // No modificar a partir de aqui
       console.log(persona.apellidos);
     </script>
+    <script src="pruebas.js"></script>
   </body>
 </html>

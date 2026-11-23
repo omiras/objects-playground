@@ -6,7 +6,7 @@
     <title>Ejercicio 4 · Objetos anidados</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body data-ejercicio="ex4">
     <main class="lesson">
       <header>
         <h1>Ejercicio 4 · Objetos anidados</h1>
@@ -27,8 +27,12 @@ console.log(gato.dueño.nombre); // Ana</code></pre>
         <summary>Resultado esperado</summary>
         <pre>Bigotes</pre>
       </details>
+      <section aria-labelledby="pruebas"><h2 id="pruebas">Comprueba tu solución</h2><p id="resumen"></p><ul id="resultados"></ul></section>
     </main>
     <script>
+      window.__exerciseLogs = [];
+      const originalLog = console.log;
+      console.log = function (...valores) { window.__exerciseLogs.push(valores); originalLog.apply(console, valores); };
       let estudiante = {
         nombre: "Alba",
         conocimientos: ["Trello", "Adobe"],
@@ -45,5 +49,6 @@ console.log(gato.dueño.nombre); // Ana</code></pre>
        * Escribe una sentencia JavaScript que permita mostrar SOLAMENTE  el nombre de su mascota por console.log
        */
     </script>
+    <script src="pruebas.js"></script>
   </body>
 </html>

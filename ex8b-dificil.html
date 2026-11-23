@@ -6,7 +6,7 @@
     <title>Ejercicio 8b (difícil) · Contar personas por país</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body data-ejercicio="ex8b-dificil">
     <main class="lesson">
       <header>
         <h1>Ejercicio 8b (difícil) · Contar personas por país</h1>
@@ -29,8 +29,12 @@ console.log(personas[0].pais === "España"); // true</code></pre>
 1
 0</pre>
       </details>
+      <section aria-labelledby="pruebas"><h2 id="pruebas">Comprueba tu solución</h2><p id="resumen"></p><ul id="resultados"></ul></section>
     </main>
     <script>
+      window.__exerciseLogs = [];
+      const originalLog = console.log;
+      console.log = function (...valores) { window.__exerciseLogs.push(valores); originalLog.apply(console, valores); };
       /**
        * Contar cuántas personas son de un país determinado
        * 
@@ -57,5 +61,6 @@ console.log(personas[0].pais === "España"); // true</code></pre>
       
       console.log(countPeopleFromCountry([{ nombre: "Laura", pais: "Brasil" }], "Perú")); // 0
     </script>
+    <script src="pruebas.js"></script>
   </body>
 </html>

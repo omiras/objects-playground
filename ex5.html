@@ -6,7 +6,7 @@
     <title>Ejercicio 5 · Array de objetos</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body data-ejercicio="ex5">
     <main class="lesson">
       <header>
         <h1>Ejercicio 5 · Array de objetos</h1>
@@ -30,8 +30,12 @@ Precio Leche: 1.5
 Nombre del cuarto producto en mayúsculas: HUEVOS
 Suma del precio de Pan + Manzanas: 2.05</pre>
       </details>
+      <section aria-labelledby="pruebas"><h2 id="pruebas">Comprueba tu solución</h2><p id="resumen"></p><ul id="resultados"></ul></section>
     </main>
     <script>
+      window.__exerciseLogs = [];
+      const originalLog = console.log;
+      console.log = function (...valores) { window.__exerciseLogs.push(valores); originalLog.apply(console, valores); };
       /**
        * Fíjate en el siguiente array. Es un array de objetos. Concretamente, de productos de supermercado. Cada producte se compone de un nombre y un precio.
        */
@@ -58,5 +62,6 @@ Suma del precio de Pan + Manzanas: 2.05</pre>
       const precioPanMasManzanas = 0; //<---CAMBIAR
       console.log("Suma del precio de Pan + Manzanas: ", precioPanMasManzanas);
     </script>
+    <script src="pruebas.js"></script>
   </body>
 </html>

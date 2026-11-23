@@ -6,7 +6,7 @@
     <title>Ejercicio 1 · Leer una propiedad</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body data-ejercicio="ex1">
     <main class="lesson">
       <header>
         <h1>Ejercicio 1 · Leer una propiedad</h1>
@@ -27,8 +27,12 @@ console.log(gato.edad); // 2</code></pre>
         <summary>Resultado esperado</summary>
         <pre>95</pre>
       </details>
+      <section aria-labelledby="pruebas"><h2 id="pruebas">Comprueba tu solución</h2><p id="resumen"></p><ul id="resultados"></ul></section>
     </main>
     <script>
+      window.__exerciseLogs = [];
+      const originalLog = console.log;
+      console.log = function (...valores) { window.__exerciseLogs.push(valores); originalLog.apply(console, valores); };
       /**
        * Acceder a las propiedades de un objeto
        */
@@ -43,5 +47,6 @@ console.log(gato.edad); // 2</code></pre>
        * En esta misma carpeta tienes varios ejemplos de cómo acceder a los objetos. Úsalos: no tienes que recordar nada de memoria
        */
     </script>
+    <script src="pruebas.js"></script>
   </body>
 </html>

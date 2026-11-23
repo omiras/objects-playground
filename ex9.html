@@ -6,7 +6,7 @@
     <title>Ejercicio 9 · Método aprender</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body data-ejercicio="ex9">
     <main class="lesson">
       <header>
         <h1>Ejercicio 9 · Método aprender</h1>
@@ -28,8 +28,12 @@ console.log(gato.juguetes); // ["pelota"]</code></pre>
         <summary>Resultado esperado</summary>
         <pre>Debería aparecer aquí que el estudiante ha aprendido HTML: ["HTML"]</pre>
       </details>
+      <section aria-labelledby="pruebas"><h2 id="pruebas">Comprueba tu solución</h2><p id="resumen"></p><ul id="resultados"></ul></section>
     </main>
     <script>
+      window.__exerciseLogs = [];
+      const originalLog = console.log;
+      console.log = function (...valores) { window.__exerciseLogs.push(valores); originalLog.apply(console, valores); };
       /**
        * Métodos de objetos
        */
@@ -52,5 +56,6 @@ console.log(gato.juguetes); // ["pelota"]</code></pre>
         estudiante.conocimientos
       );
     </script>
+    <script src="pruebas.js"></script>
   </body>
 </html>

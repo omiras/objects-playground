@@ -6,7 +6,7 @@
     <title>Ejercicio 6 · Contar hobbies</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body data-ejercicio="ex6">
     <main class="lesson">
       <header>
         <h1>Ejercicio 6 · Contar hobbies</h1>
@@ -29,8 +29,12 @@ console.log(persona.hobbies.length); // 2</code></pre>
 1
 0</pre>
       </details>
+      <section aria-labelledby="pruebas"><h2 id="pruebas">Comprueba tu solución</h2><p id="resumen"></p><ul id="resultados"></ul></section>
     </main>
     <script>
+      window.__exerciseLogs = [];
+      const originalLog = console.log;
+      console.log = function (...valores) { window.__exerciseLogs.push(valores); originalLog.apply(console, valores); };
       /**
        * Contar cuántos hobbies tiene una persona
        * 
@@ -48,5 +52,6 @@ console.log(persona.hobbies.length); // 2</code></pre>
       console.log(countHobbies({ nombre: "Ana", hobbies: ["bailar"] })); // 1
       console.log(countHobbies({ nombre: "Luis", hobbies: [] })); // 0. Porque la propiedad hobbies no tiene elementos (es un array vacío)
     </script>
+    <script src="pruebas.js"></script>
   </body>
 </html>

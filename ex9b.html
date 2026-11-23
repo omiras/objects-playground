@@ -6,7 +6,7 @@
     <title>Ejercicio 9b · El robot</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body data-ejercicio="ex9b">
     <main class="lesson">
       <header>
         <h1>Ejercicio 9b · El robot</h1>
@@ -37,8 +37,12 @@ Front Ender Maximus está encendido.
 Front Ender Maximus ha sido cargado. Nivel de batería actual: 4000
 Front Ender Maximus está realizando la tarea: caminar</pre>
       </details>
+      <section aria-labelledby="pruebas"><h2 id="pruebas">Comprueba tu solución</h2><p id="resumen"></p><ul id="resultados"></ul></section>
     </main>
     <script>
+      window.__exerciseLogs = [];
+      const originalLog = console.log;
+      console.log = function (...valores) { window.__exerciseLogs.push(valores); originalLog.apply(console, valores); };
       /**
        * Completa cada pregunta . Cada una de ellas requiere de una única línea de código. Cambia cada undefined por la sentencia JavaScript adecuada
        *
@@ -124,5 +128,6 @@ Front Ender Maximus está realizando la tarea: caminar</pre>
        * 3. Indica al robot que relice la tarea de "caminar"
        *  */
     </script>
+    <script src="pruebas.js"></script>
   </body>
 </html>
