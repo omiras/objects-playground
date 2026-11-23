@@ -6,11 +6,11 @@ const logs = window.__exerciseLogs || [];
 const id = document.body.dataset.ejercicio;
 
 const ejercicios = {
-  ex1: [{ caso: "console.log(vacuna.efectividad)", esperado: "95", ejecutar: () => logs.find(x => x.length === 1)?.[0] }],
+  ex1: [{ caso: "Valor mostrado en la consola", esperado: "95", ejecutar: () => logs.find(x => x.length === 1)?.[0] }],
   ex1a: [{ caso: "persona", esperado: { nombre: "Ana", apellidos: "García", edad: 25, hobbies: ["leer", "nadar"] }, ejecutar: () => persona, comparar: recibido => recibido && typeof recibido.nombre === "string" && typeof recibido.apellidos === "string" && typeof recibido.edad === "number" && Array.isArray(recibido.hobbies) }],
   ex2: [{ caso: "persona.apellidos", esperado: "Rudolph", ejecutar: () => persona.apellidos }],
   ex3: [{ caso: "estudiante.conocimientos", esperado: ["Trello", "Adobe", "CSS"], ejecutar: () => estudiante.conocimientos }],
-  ex4: [{ caso: "console.log(estudiante.mascota.nombre)", esperado: "Bigotes", ejecutar: () => logs.find(x => x.length === 1)?.[0] }],
+  ex4: [{ caso: "Nombre de la mascota mostrado en la consola", esperado: "Bigotes", ejecutar: () => logs.find(x => x.length === 1)?.[0] }],
   ex5: [
     { caso: "precioLeche", esperado: 1.5, ejecutar: () => precioLeche },
     { caso: "nombreHuevosMayusculas", esperado: "HUEVOS", ejecutar: () => nombreHuevosMayusculas },
