@@ -53,13 +53,13 @@ Suma del precio de Pan + Manzanas: 2.05</pre>
       const precioManzanas = productos[0].precio;
       console.log("Precio Manzanas: ", precioManzanas);
       
-      const precioLeche = 0; //<-- CAMBIAR
+      const precioLeche = productos[2].precio; //<-- CAMBIAR
       console.log("Precio Leche: ", precioLeche);
       
-      const nombreHuevosMayusculas = ""; //<-- CAMBIAR
+      const nombreHuevosMayusculas = productos[3].nombre.toUpperCase(); //<-- CAMBIAR
       console.log("Nombre del cuarto producto en mayúsculas: ", nombreHuevosMayusculas);
       
-      const precioPanMasManzanas = 0; //<---CAMBIAR
+      const precioPanMasManzanas = productos[1].precio + productos[0].precio; //<---CAMBIAR
       console.log("Suma del precio de Pan + Manzanas: ", precioPanMasManzanas);
     </script>
     <script src="pruebas.js"></script>

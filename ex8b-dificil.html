@@ -43,7 +43,11 @@ console.log(personas[0].pais === "España"); // true</code></pre>
        */
       
       function countPeopleFromCountry(people, country) {
-      
+        let total = 0;
+        for (let i = 0; i < people.length; i++) {
+          if (people[i].pais === country) total++;
+        }
+        return total;
       }
       
       // Ejemplo de uso:
