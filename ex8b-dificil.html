@@ -43,10 +43,10 @@ console.log(personas[0].pais === "España"); // true</code></pre>
        * Devuelve cuántas personas en el array son de ese país.
        */
       
-      function countPeopleFromCountry(people, country) {
+      function countPeopleFromCountry(personas, paisBuscado) {
         let total = 0;
-        for (let i = 0; i < people.length; i++) {
-          if (people[i].pais === country) total++;
+        for (let i = 0; i < personas.length; i++) {
+          if (personas[i].pais === paisBuscado) total++;
         }
         return total;
       }
