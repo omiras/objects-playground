@@ -118,3 +118,5 @@ body {
 #resultados li { margin: 6px 0; }
 #resultados .bien { color: #167044; }
 #resultados .mal { color: #a52a2a; }
+
+.rgb-puros { display: block; width: 300px; max-width: 100%; height: auto; margin: 18px auto; font: 14px Arial, sans-serif; }

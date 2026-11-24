@@ -14,7 +14,7 @@
       </header>
       <section aria-labelledby="teoria">
         <h2 id="teoria">Antes de empezar</h2>
-        <p>Dentro de un método, this señala al objeto que lo invoca.</p>
+        <p>Dentro de un método, <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/this" target="_blank" rel="noopener noreferrer"><code>this</code> (MDN)</a> señala al objeto que lo invoca.</p>
         <pre><code>const gato = { juguetes: [], aprender: function (juguete) { this.juguetes.push(juguete); } };
 gato.aprender("pelota");
 console.log(gato.juguetes); // ["pelota"]</code></pre>
