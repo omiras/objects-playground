@@ -1,50 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 1a · Crear un objeto</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="pruebas.js" defer></script>
-  </head>
-  <body data-ejercicio="ex1a">
-    <main class="lesson">
-      <header>
-        <h1>Ejercicio 1a · Crear un objeto</h1>
-      </header>
-      <section aria-labelledby="teoria">
-        <h2 id="teoria">Antes de empezar</h2>
-        <p>Un objeto se escribe entre llaves; un array, entre corchetes.</p>
-        <pre><code>const ejemplo = { nombre: "Ana", hobbies: ["leer", "nadar"] };
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 1a · Crear un objeto</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="pruebas.js" defer></script>
+</head>
+
+<body data-ejercicio="ex1a">
+  <main class="lesson">
+    <header>
+      <h1>Ejercicio 1a · Crear un objeto</h1>
+    </header>
+    <section aria-labelledby="teoria">
+      <h2 id="teoria">Antes de empezar</h2>
+      <p>Un objeto se escribe entre llaves; un array, entre corchetes.</p>
+      <pre><code>const ejemplo = { nombre: "Ana", hobbies: ["leer", "nadar"] };
 console.log(ejemplo.hobbies);</code></pre>
-      </section>
-      <section aria-labelledby="practica">
-        <h2 id="practica">Tu turno</h2>
-        <p>Abre la consola del navegador (<strong>F12 → Consola</strong>).</p>
-        <p>Crea un objeto llamado <code>persona</code> con nombre, apellidos, edad y hobbies. Muéstralo por la consola.</p>
-        <p>Edita el último <code>&lt;script&gt;</code>, guarda el archivo y recarga la página.</p>
-      </section> 
-      <section aria-labelledby="esperado">
-        <h2 id="esperado">Resultado esperado en la consola</h2>
-        <p>Por ejemplo, si usas estos datos:</p>
-        <pre>{ nombre: "Ana", apellidos: "García", edad: 25, hobbies: ["leer", "nadar"] }</pre>
-      </section>
-      <section aria-labelledby="pruebas"><h2 id="pruebas">Comprueba tu solución</h2><p>Guarda el archivo y recarga la página. Cada prueba muestra el resultado esperado y el obtenido.</p><p id="resumen" aria-live="polite"></p><ul id="resultados" aria-live="polite"></ul></section>
-    </main>
-    <script>
-      window.__exerciseLogs = [];
-      const originalLog = console.log;
-      console.log = function (...valores) { window.__exerciseLogs.push(valores); originalLog.apply(console, valores); };
-      /**
-       * Crea un objeto que represente información personal sobre ti. 
-       * El objeto tiene que tener 4 propiedades
-       * 
-       * - nombre
-       * - apellidos
-       * - edad
-       * - hobbies (un array de strings)
-       * 
-       */
-    </script>
-  </body>
+    </section>
+    <section aria-labelledby="practica">
+      <h2 id="practica">Tu turno</h2>
+      <p>Abre la consola del navegador (<strong>F12 → Consola</strong>).</p>
+      <p>Crea un objeto llamado <code>persona</code> con nombre, apellidos, edad y hobbies. Muéstralo por la consola.
+      </p>
+      <p>Edita el último <code>&lt;script&gt;</code>, guarda el archivo y recarga la página.</p>
+    </section>
+    <section aria-labelledby="esperado">
+      <h2 id="esperado">Resultado esperado en la consola</h2>
+      <p>Por ejemplo, si usas estos datos:</p>
+      <pre>{ nombre: "Ana", apellidos: "García", edad: 25, hobbies: ["leer", "nadar"] }</pre>
+    </section>
+    <section aria-labelledby="pruebas">
+      <h2 id="pruebas">Comprueba tu solución</h2>
+      <p>Guarda el archivo y recarga la página. Cada prueba muestra el resultado esperado y el obtenido.</p>
+      <p id="resumen" aria-live="polite"></p>
+      <ul id="resultados" aria-live="polite"></ul>
+    </section>
+  </main>
+  <script>
+    window.__exerciseLogs = [];
+    const originalLog = console.log;
+    console.log = function (...valores) { window.__exerciseLogs.push(valores); originalLog.apply(console, valores); };
+    /**
+     * Crea un objeto que represente a Ana. 
+     * El objeto tiene que tener 4 propiedades
+     * 
+     * - nombre
+     * - apellidos
+     * - edad
+     * - hobbies (un array de strings)
+     * 
+     */
+  </script>
+</body>
+
 </html>
